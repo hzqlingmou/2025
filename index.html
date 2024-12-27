@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <!DOCTYPE html>
+    <!-- saved from url=(0020)https://furinaa.net/ -->
+    <html lang="zh">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- 以下信息请不要动哦 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="https://pi.escaped.icu/1.png">
+        <link rel="icon" type="image/png" href="https://pi.escaped.icu/1.png">
+        <link rel="apple-touch-icon" href="https://pi.escaped.icu/1.png">
+        <title>Welcome to 2025 !</title>
+        <style>
+            .counter {
+                position: fixed;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 50%;
+                background-color: rgb(233, 18, 18);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2em;
+                color: #ff934c;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+                z-index: 1;
+                text-align: center;
+            }
+
+            .para {
+                position: fixed;
+                top: 30%;
+                left: 0%;
+                width: 100%;
+                height: 70%;
+                background-color: rgb(233, 18, 18);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2em;
+                color: #ffffff;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+                z-index: 0;
+            }
+
+            button {
+                background-color: #ffffff;
+                color: #ff934c;
+                border: none;
+                padding: 10px 20px;
+                font-size: 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+                margin-right: 30px;
+                margin-top: -80px;
+            }
+
+            button:hover {
+                background-color: #cf5d2f;
+                color: #ffffff
+            }
+
+            button:last-child {
+                margin-right: 0;
+                /* 设置最后一个按钮的右边距为0 */
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 30px;
+                background-color: rgb(233, 18, 18);
+                color: #ff934c;
+                text-align: center;
+                line-height: 30px;
+                text-decoration: none;
+            }
+
+            footer a {
+                position: relative;
+                color: #ff934c;
+                text-decoration: none;
+            }
+
+            footer a::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: -4px;
+                left: 0;
+                background-color: #ff934c;
+                transform-origin: bottom right;
+                transition: transform 0.3s ease-out;
+            }
+
+            footer a:hover::after,
+            footer a:focus::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="counter">
+        <p id="countdown"></p>
+    </div>
+    <div class="para">
+        <button onclick="location.href='./fire.html'">一起放烟花</button>
+        <button onclick="location.href='./fire.html'">一起放烟花</button>
+    </div>
+    <footer>&copy 2023 - present <a href="https://www.escaped.icu" target="_blank" rel="noopener">逸燧</a> All Serves
+        Right.</footer>
+    <script>
+        // JavaScript for Countdown
+        function updateCountdown() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const nextYear = new Date(year + 1, 0, 1);
+            const diff = nextYear - now;
+
+            const days = String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, '0');
+            const hours = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+            const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+            const seconds = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
+
+            document.getElementById('countdown').innerText = `距离2024年结束还有\n ${days}天 ${hours}小时 ${minutes}分钟 ${seconds}秒`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+
+</html>
