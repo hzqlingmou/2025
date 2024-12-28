@@ -37,16 +37,18 @@
         }
 
         .chat {
-            top: 10%;
-            left: 15%;
-            right: 15%;
+            margin: 50px auto; /* 设置评论区与其他内容的上下间距 */
+            width: 70%; /* 评论区的宽度 */
             background-color: rgb(233, 18, 18);
             color: #ffd700;
             text-align: center;
             line-height: 30px;
             text-decoration: none;
-            z-index: 2;
+            z-index: 2; /* 保持其他属性 */
+            padding: 20px; /* 添加内边距，让内容更美观 */
+            box-sizing: border-box; /* 确保宽度包含内边距 */
         }
+
 
         footer {
             position: fixed;
