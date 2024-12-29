@@ -12,12 +12,15 @@
     <style>
         body {
             display: flex;
-    flex-direction: column; /* 垂直布局 */
-    align-items: center; /* 水平居中 */
-    justify-content: center; 
+            flex-direction: column;
+            /* 垂直布局 */
+            align-items: center;
+            /* 水平居中 */
+            justify-content: center;
             bottom: 0;
             width: 100%;
-            height: auto; /* 允许高度根据内容增长 */
+            height: auto;
+            /* 允许高度根据内容增长 */
             min-height: 100%;
             background-color: rgb(233, 18, 18);
             color: #ffd700;
@@ -26,43 +29,54 @@
             text-decoration: none;
             z-index: 0;
             overflow-x: hidden;
-            font-family: 'KaiTi',Arial, Helvetica, sans-serif;
-            marigin: 0;
+            font-family: 'KaiTi', Arial, Helvetica, sans-serif;
+            margin: 0;
             padding: 0;
         }
 
         .back {
-    margin: 20px 0; /* 设置上下间距 */
-    padding: 10px; /* 添加内边距 */
-    width: 100%; /* 保持宽度 */
-    background-color: rgb(233, 18, 18);
-    font-family: 'KaiTi', Arial, Helvetica, sans-serif;
-    text-align: left;
-    position: relative; /* 从固定定位改为相对定位 */
-}
-footer {
-    margin-top: 30px; /* 和评论区保持间距 */
-    width: 100%;
-    height: 30px;
-    background-color: rgb(233, 18, 18);
-    color: #ffd700;
-    text-align: center;
-    line-height: 30px;
-    text-decoration: none;
-    position: relative; /* 从固定定位改为相对定位 */
-}
+            margin: 20px 0;
+            /* 设置上下间距 */
+            padding: 10px;
+            /* 添加内边距 */
+            width: 100%;
+            /* 保持宽度 */
+            background-color: rgb(233, 18, 18);
+            font-family: 'KaiTi', Arial, Helvetica, sans-serif;
+            text-align: left;
+            position: relative;
+            /* 从固定定位改为相对定位 */
+        }
 
-
-        .chat {
-            width: 80%; /* 评论区的宽度 */
+        footer {
+            margin-top: 30px;
+            /* 和评论区保持间距 */
+            width: 100%;
+            height: 30px;
             background-color: rgb(233, 18, 18);
             color: #ffd700;
             text-align: center;
             line-height: 30px;
             text-decoration: none;
-            z-index: 2; /* 保持其他属性 */
-            padding: 0px; /* 添加内边距，让内容更美观 */
-            box-sizing: border-box; /* 确保宽度包含内边距 */
+            position: relative;
+            /* 从固定定位改为相对定位 */
+        }
+
+
+        .chat {
+            width: 80%;
+            /* 评论区的宽度 */
+            background-color: rgb(233, 18, 18);
+            color: #ffd700;
+            text-align: center;
+            line-height: 30px;
+            text-decoration: none;
+            z-index: 2;
+            /* 保持其他属性 */
+            padding: 0px;
+            /* 添加内边距，让内容更美观 */
+            box-sizing: border-box;
+            /* 确保宽度包含内边距 */
         }
 
         footer a {
@@ -97,7 +111,7 @@ footer {
             font-size: 1.5rem;
             cursor: pointer;
             border-radius: 5px;
-            font-family: 'KaiTi',Arial, Helvetica, sans-serif;
+            font-family: 'KaiTi', Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
